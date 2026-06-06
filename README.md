@@ -33,6 +33,11 @@ human review in the workflow.
 ## Current features
 
 - Generate a Markdown report draft from JSON input.
+- Validate input quality before generating a report.
+- Show a review dashboard with cost, meeting, and technical review counts.
+- Produce an action register with priority, category, source, and description.
+- Write a machine-readable JSON summary for automation and release checks.
+- Filter cost follow-up items with a configurable variance threshold.
 - Summarize proposed and reviewed cost amounts.
 - Highlight cost variances that need follow-up.
 - Convert meeting decisions and actions into a readable section.
@@ -67,6 +72,36 @@ The same command is also available after installation:
 cwkit examples/sample_project.json --output examples/sample_project_report.md
 ```
 
+Validate an input file without generating a report:
+
+```bash
+python -m construction_workflow_kit examples/sample_project.json --validate-only
+```
+
+Treat warnings as failures when preparing release examples or reviewing
+contributions:
+
+```bash
+python -m construction_workflow_kit examples/sample_project.json --validate-only --strict
+```
+
+Generate both a Markdown report and a JSON summary:
+
+```bash
+python -m construction_workflow_kit examples/sample_project.json \
+  --output examples/sample_project_report.md \
+  --summary-output examples/sample_project_summary.json
+```
+
+Ignore cost variances at or below a selected amount when building the action
+register:
+
+```bash
+python -m construction_workflow_kit examples/sample_project.json \
+  --variance-threshold 500 \
+  --output examples/sample_project_report.md
+```
+
 ## Example input
 
 ```json
@@ -92,8 +127,19 @@ cwkit examples/sample_project.json --output examples/sample_project_report.md
 ```markdown
 # Sample Riverfront Access Road - Report Draft
 
+## Review Dashboard
+- Cost packages reviewed: 2
+- Cost packages needing follow-up: 1
+- Net cost variance: -$700.00
+
 ## Cost Review
 - Temporary drainage: proposed $12,500.00, reviewed $11,800.00, variance -$700.00 (needs review).
+
+## Action Register
+- [medium] cost: Confirm variance of -$700.00 for Temporary drainage. (Temporary drainage)
+
+## Validation Notes
+- No validation issues were detected.
 ```
 
 ## Project structure
@@ -135,7 +181,6 @@ publishing a release.
 - Add templates for weekly reports, issue summaries, and meeting minutes.
 - Add optional AI-assisted drafting while keeping non-AI deterministic output.
 - Add import support for CSV or spreadsheet-derived data.
-- Add stronger validation for project input schemas.
 - Add more examples for different construction management workflows.
 
 ## Contributing

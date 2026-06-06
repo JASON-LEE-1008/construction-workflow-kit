@@ -1,0 +1,48 @@
+{
+  "project": {
+    "name": "Sample Riverfront Access Road",
+    "owner": "Example Public Works Agency",
+    "phase": "Design review",
+    "prepared_for": "Weekly coordination review"
+  },
+  "variance_threshold": 0.0,
+  "metrics": {
+    "cost_item_count": 2,
+    "total_proposed": 60700.0,
+    "total_reviewed": 60000.0,
+    "net_variance": -700.0,
+    "cost_items_needing_review": 1,
+    "meeting_action_count": 2,
+    "open_technical_items": 1
+  },
+  "validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "actions": [
+    {
+      "category": "cost",
+      "priority": "medium",
+      "source": "Temporary drainage",
+      "description": "Confirm variance of -$700.00 for Temporary drainage."
+    },
+    {
+      "category": "meeting",
+      "priority": "medium",
+      "source": "Drainage coordination",
+      "description": "Follow up: Issue updated quantity table."
+    },
+    {
+      "category": "meeting",
+      "priority": "medium",
+      "source": "Drainage coordination",
+      "description": "Follow up: Confirm temporary bypass sequence."
+    },
+    {
+      "category": "technical",
+      "priority": "medium",
+      "source": "Retaining wall calculation note",
+      "description": "Close technical review for Retaining wall calculation note."
+    }
+  ]
+}

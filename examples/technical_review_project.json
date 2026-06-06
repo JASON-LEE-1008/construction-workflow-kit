@@ -1,0 +1,51 @@
+{
+  "project": {
+    "name": "Sample Transit Canopy Upgrade",
+    "owner": "Example Civic Facilities Team",
+    "phase": "Technical review",
+    "prepared_for": "Design coordination meeting"
+  },
+  "cost_items": [
+    {
+      "package": "Canopy steel connection review",
+      "proposed_amount": 9200,
+      "reviewed_amount": 9500
+    },
+    {
+      "package": "Temporary pedestrian detour",
+      "proposed_amount": 6800,
+      "reviewed_amount": 6400
+    }
+  ],
+  "meeting_notes": [
+    {
+      "date": "2026-06-05",
+      "topic": "Canopy foundation coordination",
+      "decisions": [
+        "Use revised anchor bolt layout for draft coordination",
+        "Keep pedestrian access phasing in the next review package"
+      ],
+      "actions": [
+        "Update technical register",
+        "Confirm revised detail index"
+      ]
+    }
+  ],
+  "technical_items": [
+    {
+      "title": "Anchor bolt detail review",
+      "status": "needs review",
+      "owner": "Structural reviewer"
+    },
+    {
+      "title": "Pedestrian detour sketch",
+      "status": "open",
+      "owner": "Construction manager"
+    },
+    {
+      "title": "Canopy drainage note",
+      "status": "resolved",
+      "owner": "Design reviewer"
+    }
+  ]
+}

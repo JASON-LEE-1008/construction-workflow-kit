@@ -1,0 +1,60 @@
+{
+  "project": {
+    "name": "Sample Transit Canopy Upgrade",
+    "owner": "Example Civic Facilities Team",
+    "phase": "Technical review",
+    "prepared_for": "Design coordination meeting"
+  },
+  "variance_threshold": 250.0,
+  "metrics": {
+    "cost_item_count": 2,
+    "total_proposed": 16000.0,
+    "total_reviewed": 15900.0,
+    "net_variance": -100.0,
+    "cost_items_needing_review": 2,
+    "meeting_action_count": 2,
+    "open_technical_items": 2
+  },
+  "validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "actions": [
+    {
+      "category": "cost",
+      "priority": "medium",
+      "source": "Canopy steel connection review",
+      "description": "Confirm variance of $300.00 for Canopy steel connection review."
+    },
+    {
+      "category": "cost",
+      "priority": "medium",
+      "source": "Temporary pedestrian detour",
+      "description": "Confirm variance of -$400.00 for Temporary pedestrian detour."
+    },
+    {
+      "category": "meeting",
+      "priority": "medium",
+      "source": "Canopy foundation coordination",
+      "description": "Follow up: Update technical register."
+    },
+    {
+      "category": "meeting",
+      "priority": "medium",
+      "source": "Canopy foundation coordination",
+      "description": "Follow up: Confirm revised detail index."
+    },
+    {
+      "category": "technical",
+      "priority": "high",
+      "source": "Anchor bolt detail review",
+      "description": "Close technical review for Anchor bolt detail review."
+    },
+    {
+      "category": "technical",
+      "priority": "medium",
+      "source": "Pedestrian detour sketch",
+      "description": "Close technical review for Pedestrian detour sketch."
+    }
+  ]
+}

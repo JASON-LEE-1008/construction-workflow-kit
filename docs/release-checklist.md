@@ -19,6 +19,8 @@ python -m pip install -e ".[dev]"
 python -m ruff check .
 python -m ruff format --check .
 python -m pytest -q
+python -m construction_workflow_kit examples/sample_project.json --validate-only --strict
+python -m construction_workflow_kit examples/sample_project.json --summary-output examples/sample_project_summary.json --output examples/sample_project_report.md
 python -m build
 python -m twine check dist/*
 ```
@@ -35,15 +37,16 @@ Confirm the generated Markdown contains:
 - cost review summary
 - meeting notes
 - technical material register
-- draft next actions
+- action register
+- validation notes
 
 ## Tagging
 
-For version `0.1.0`, use:
+For version `0.2.0`, use:
 
 ```bash
-git tag -a v0.1.0 -m "Release v0.1.0"
-git push origin v0.1.0
+git tag -a v0.2.0 -m "Release v0.2.0"
+git push origin v0.2.0
 ```
 
 ## Package publishing preflight
