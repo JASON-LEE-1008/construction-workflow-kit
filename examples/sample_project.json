@@ -1,0 +1,45 @@
+{
+  "project": {
+    "name": "Sample Riverfront Access Road",
+    "owner": "Example Public Works Agency",
+    "phase": "Design review",
+    "prepared_for": "Weekly coordination review"
+  },
+  "cost_items": [
+    {
+      "package": "Temporary drainage",
+      "proposed_amount": 12500,
+      "reviewed_amount": 11800
+    },
+    {
+      "package": "Retaining wall formwork",
+      "proposed_amount": 48200,
+      "reviewed_amount": 48200
+    }
+  ],
+  "meeting_notes": [
+    {
+      "date": "2026-06-01",
+      "topic": "Drainage coordination",
+      "decisions": [
+        "Use the revised inlet schedule from the design review package"
+      ],
+      "actions": [
+        "Issue updated quantity table",
+        "Confirm temporary bypass sequence"
+      ]
+    }
+  ],
+  "technical_items": [
+    {
+      "title": "Retaining wall calculation note",
+      "status": "pending",
+      "owner": "Design reviewer"
+    },
+    {
+      "title": "Temporary traffic control sketch",
+      "status": "accepted for draft reporting",
+      "owner": "Construction manager"
+    }
+  ]
+}
