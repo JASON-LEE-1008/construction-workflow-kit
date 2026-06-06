@@ -100,7 +100,7 @@ cwkit examples/sample_project.json --output examples/sample_project_report.md
 
 ```text
 .
-├── .github/workflows/      # Placeholder for future GitHub Actions workflows
+├── .github/workflows/      # GitHub Actions workflow for linting and tests
 ├── docs/                   # Project notes and OSS application draft
 ├── examples/               # Synthetic example inputs and generated samples
 ├── src/                    # Python package source code

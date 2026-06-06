@@ -6,4 +6,4 @@
   drafts from structured JSON input.
 - Added synthetic example data for cost review, meeting notes, and technical
   material tracking.
-- Added tests, project metadata, documentation, and a GitHub workflow placeholder.
+- Added tests, project metadata, documentation, and CI configuration.
