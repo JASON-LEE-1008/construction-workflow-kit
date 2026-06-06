@@ -7,3 +7,5 @@
 - Added synthetic example data for cost review, meeting notes, and technical
   material tracking.
 - Added tests, project metadata, documentation, and CI configuration.
+- Added release readiness files: issue templates, pull request template,
+  security policy, and release checklist.

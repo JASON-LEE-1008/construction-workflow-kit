@@ -100,16 +100,20 @@ cwkit examples/sample_project.json --output examples/sample_project_report.md
 
 ```text
 .
-├── .github/workflows/      # GitHub Actions workflow for linting and tests
-├── docs/                   # Project notes and OSS application draft
-├── examples/               # Synthetic example inputs and generated samples
-├── src/                    # Python package source code
-├── tests/                  # Pytest test suite
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── README.md
-└── pyproject.toml
+|-- .github/
+|   |-- ISSUE_TEMPLATE/
+|   |-- workflows/
+|   `-- pull_request_template.md
+|-- docs/
+|-- examples/
+|-- src/
+|-- tests/
+|-- CHANGELOG.md
+|-- CONTRIBUTING.md
+|-- LICENSE
+|-- README.md
+|-- SECURITY.md
+`-- pyproject.toml
 ```
 
 ## Tests and checks
@@ -117,7 +121,13 @@ cwkit examples/sample_project.json --output examples/sample_project_report.md
 ```bash
 python -m pytest -q
 python -m ruff check .
+python -m ruff format --check .
+python -m build
+python -m twine check dist/*
 ```
+
+See [docs/release-checklist.md](docs/release-checklist.md) before tagging or
+publishing a release.
 
 ## Future work
 

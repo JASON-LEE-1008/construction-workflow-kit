@@ -29,8 +29,10 @@ dependencies = []
 
 [project.optional-dependencies]
 dev = [
+  "build>=1.2",
   "pytest>=8.0",
-  "ruff>=0.5"
+  "ruff>=0.5",
+  "twine>=5.0"
 ]
 
 [project.scripts]
